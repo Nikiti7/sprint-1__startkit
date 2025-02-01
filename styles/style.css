@@ -1,5 +1,17 @@
+@keyframes rotation {
+	to {
+		transform: rotate(360deg);
+	}
+}
+
 a {
 	text-decoration: none;
+	color:#2f80ed;
+	transition: 0.2s opacity;
+}
+
+a:hover {
+	opacity: 0.8;
 }
 
 .page {
@@ -23,6 +35,8 @@ font-family: 'Helvetica Neue', Arial, sans-serif;
 	display: flex;
 	align-items: center;
 	background-color: #f2f2f2;
+
+	overflow: hidden;
 }
 
 .logo {
@@ -42,7 +56,7 @@ font-family: 'Helvetica Neue', Arial, sans-serif;
 
 	line-height: 96px;
 	font-size: 102px;
-	font-weight: 600;
+	font-style: 600;
 }
 
 .subtitle {
@@ -53,7 +67,7 @@ font-family: 'Helvetica Neue', Arial, sans-serif;
 
 	line-height: 25px;
 	font-size: 18px;
-	font-weight: normal;
+	font-style: normal;
 }
 
 .header__main-illustration {
@@ -74,54 +88,202 @@ font-family: 'Helvetica Neue', Arial, sans-serif;
 	right: 0;
 	top: 64px;
 	background-color: #2f80ed;
+
+	animation: rotation 20s infinite linear;
 }
 
 .link {
 	text-decoration: none;
 }
+
 /*---------------------- DESCRIPTION --------------------- */
 .description {
 	margin: 100px auto;
 	width: 80%;
+	
 }
 
-.description__two-columns {
+.two-columns {
 	display: flex;
 	justify-content: space-between;
 }
 
-.description__two-columns_brief {
+.two-columns_brief {
 	margin: 0;
 	width: 175px;
 
 	line-height: 1.2;
 	font-size: 18px;
-	font-weight: normal;
+	font-style: normal;
 	color: #2f80ed;
 }
 
-.description__two-columns_main-text {
+.two-columns_main-text {
 	width: 80%;
 	min-width: 784px;
 }
 
-.description__two-columns_main-text_paragraph {
+.two-columns_main-text_paragraph {
 	line-height: 34px;
 	font-size: 24px;
-	font-weight: normal;
+	font-style: normal;
 	margin: 0;
 }
 
-.description__two-columns_main-text_paragraph + .description__two-columns_main-text_paragraph {
+.two-columns_main-text_paragraph + .two-columns_main-text_paragraph {
 	margin-top: 30px;
 }
 
 .span_accent {
 	line-height: 34px;
 	font-size: 24px;
-	font-weight: 600;
+	font-style: 600;
 }
 
+
+/*---------------------- TECHNIQUES --------------------- */
+
+.techniques {
+	width: 80%;
+	margin: 100px auto;
+}
+
+.cards {
+	width: 920px;
+
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+}
+
+.cards__table_row {
+	display: flex;
+}
+
+.cards__item + .cards__item {
+	margin-left: 100px;
+}
+
+.cards__item-2 {
+	width: 240px;
+	height: 400px;
+}
+
+.cards__image {
+	border-radius: 50%;
+	width: 160px;
+	height: 160px;
+
+	margin: 60px 40px 0;
+}
+
+.cards__title {
+	margin: 43px 0 16px;
+
+	line-height: 1.15;
+	font-size: 24px;
+	font-style: 600;
+
+	text-align: center;
+}
+
+.cards__description {
+	margin: 0;
+	line-height: 23px;
+	font-size: 18px;
+	font-style: normal;
+
+	text-align: center;
+}
+
+
+/*---------------------- VIDEO --------------------- */
+.video {
+	margin:auto;
+	margin-top: 100px;
+}
+
+.video__iframes {
+	display: flex; 
+	justify-content: center;
+}
+
+.video__iframe {
+	width: 515px;
+	height: 316px;
+}
+
+.video__iframe + .video__iframe {
+	margin-left: 20px;
+}
+
+/*---------------------- OAKLEY --------------------- */
+.section__grey {
+	background-color: #f2f2f2;
+}
+
+.oakley {
+	padding: 180px 160px 100px;
+	margin-top: -40px;
+	width: 80%;
+}
+
+.two-columns-1 {
+	display: flex;
+	justify-content: space-between;
+}
+
+
+/*---------------------- FEYNMAN --------------------- */
+
+.feynman {
+	z-index: 1;
+	position: relative;
+	margin-top: 100px;
+	height: 890px;
+}
+
+.feynman__text {
+	text-align: center;
+	margin: auto;
+	padding-top: 100px;
+}
+
+.feynman__title {
+	width: 648px;
+	margin: auto;
+
+	line-height: 1.15;
+	font-size: 120px;
+	font-style: 600;
+}
+
+.feynman__subtitle {
+	line-height: 51px;
+	font-size: 36px;
+	font-style: normal;
+	margin-top: 70px;
+}
+
+.feynman__link {
+	position: absolute;
+	top: 50%;
+	right: 48px;
+
+	line-height: 51px;
+	font-size: 36px;
+	font-style: normal;
+}
+
+.feynman__image {
+	z-index: -1;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+
+	width: 867px;
+	height: 637px;
+}
 
 /*---------------------- DIGITS --------------------- */
 
@@ -132,17 +294,20 @@ font-family: 'Helvetica Neue', Arial, sans-serif;
 .section__title {
 	line-height: 1.15;
 	font-size: 60px;
-	font-weight: 600;
-
+	font-style: 600;
 	text-align: center;
-	margin: 100px auto 20px;
-	width: 60%;
+
+	
+	margin: auto;
+	margin-top: 100px;
+	margin-bottom: 20px;
+		width: 60%;
 }
 
 .section__subtitle {
 	line-height: 34px;
 	font-size: 24px;
-	font-weight: normal;
+	font-style: normal;
 
 	text-align: center;
 	margin: auto;
@@ -152,7 +317,8 @@ font-family: 'Helvetica Neue', Arial, sans-serif;
 .table {
 	width: 1100px;
 	margin: auto;
-	padding-top: 60px;
+	margin-top: 60px;
+	margin-bottom: 100px;
 
 	display: flex;
 	flex-direction: column;
@@ -179,67 +345,94 @@ font-family: 'Helvetica Neue', Arial, sans-serif;
 .table__heading {
 	line-height: 1.15;
 	font-size: 24px;
-	font-weight: 600;
+	font-style: 600;
 }
 
 .table__text{
 	line-height: 1.2;
 	font-size: 18px;
-	font-weight: normal;
+	font-style: normal;
 	margin-top: 20px;
 }
 
-/*---------------------- FEYNMAN --------------------- */
+/*---------------------- KHAN --------------------- */
+.khan {
+	width: 80%;
+	padding-top: 106px;
+	padding-right: 160px;
+	padding-left: 160px;
 
-.feynman {
-	z-index: 1;
-	position: relative;
-	margin-top: 100px;
-	height: 890px;
-	background-color: #f2f2f2 ;
+	background-color: #f2f2f2;
 }
 
-.feynman__text {
-	text-align: center;
-	margin: auto;
-	padding-top: 100px;
+.container {
+
 }
 
-.feynman__title {
-	width: 648px;
-	margin: auto;
+.khan__author {
+	line-height: 42px;
+	font-size: 30px;
+	font-style: normal;
+	margin: 0;
+}
+
+.khan__title {
+	line-height: 1.15;
+	font-size: 60px;
+	font-style: 600;
+
+	margin-top: 0;
+}
+
+.khan__quote {
+	width: 790px;
+	margin: 50px 0 36px;
+
+	line-height: 34px;
+	font-size: 24px;
+	font-style: normal;
+}
+
+.khan__quote-author {
+	line-height: 1.15;
+	font-size: 24px;
+	font-style: 600;
+	margin: 0;
+}
+
+.khan__quote-author-subline {
+	margin: 10px 0 0;
 
 	line-height: 1.15;
-	font-size: 120px;
-	font-weight: 600;
+	font-size: 24px;
+	font-style: normal;
 }
 
-.feynman__subtitle {
-	line-height: 51px;
-	font-size: 36px;
-	font-weight: normal;
-	margin-top: 70px;
+.book-container {
+	display: flex;
+	justify-content: start;
+
+	margin-top: 68px;
 }
 
-.feynman__link {
-	position: absolute;
-	top: 50%;
-	right: 48px;
+.book-pic {
+	width: 620px;
+	height: 608px;
 
-	line-height: 51px;
-	font-size: 36px;
-	font-weight: normal;
 }
 
-.feynman__image {
-	z-index: -1;
-	position: absolute;
-	left: 0;
-	bottom: 0;
-
-	width: 867px;
-	height: 637px;
+.book-pic + .buy-link {
+	padding-left: 48px;
 }
+
+.buy-link {
+	justify-content: start;
+
+	line-height: 42px;
+	font-size: 30px;
+	font-style: normal;
+}
+
 
 /*---------------------- KAUFMAN --------------------- */
 
@@ -247,7 +440,6 @@ font-family: 'Helvetica Neue', Arial, sans-serif;
 	z-index: 0;
 	position: relative;
 	overflow: hidden;
-	padding-bottom: 60px ;
 
 	background-color: #1f1f1f;
 	color: white;
@@ -258,11 +450,36 @@ font-family: 'Helvetica Neue', Arial, sans-serif;
 	z-index: -1;
 	position: absolute;
 	top: 0;
+	right: 0;
 
 	right: -210px;
 	height: 877px;
 	width: 877px;
+
+	animation: rotation 20s infinite linear;
 }
+
+/*---------------------- RESOURCES --------------------- */
+.resources {
+	margin: auto;
+	margin-bottom: 217px;
+}
+
+.logo-zone {
+	display: flex;
+	justify-content: center;
+
+	margin: auto;
+	margin-top: 80px;
+
+	width: 1100px;
+}
+
+.logo-zone img {
+	width: 270px;
+	height: 38px;
+}
+
 /*---------------------- FOOTER --------------------- */
 
 .footer {
@@ -289,7 +506,7 @@ font-family: 'Helvetica Neue', Arial, sans-serif;
 .footer__author {
 	line-height: 25px;
 	font-size: 18px;
-	font-weight: normal;
+	font-style: normal;
 
 	margin: 18px 0;
 }
@@ -297,7 +514,7 @@ font-family: 'Helvetica Neue', Arial, sans-serif;
 .footer__heading {
 	line-height: 30px;
 	font-size: 18px;
-	font-weight: 600;
+	font-style: 600;
 
 	margin-top: 0;
 }
@@ -305,7 +522,7 @@ font-family: 'Helvetica Neue', Arial, sans-serif;
 .footer__column-links {
 	line-height: 30px;
 	font-size: 18px;
-	font-weight: normal;
+	font-style: normal;
 
 	display: flex;
 	flex-direction: column;
@@ -316,7 +533,7 @@ font-family: 'Helvetica Neue', Arial, sans-serif;
 .footer__column-link {
 	line-height: 30px;
 	font-size: 18px;
-	font-weight: normal;
+	font-style: normal;
 
 	color: white;
 	text-decoration: none;
