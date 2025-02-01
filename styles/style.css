@@ -56,7 +56,7 @@ font-family: 'Helvetica Neue', Arial, sans-serif;
 
 	line-height: 96px;
 	font-size: 102px;
-	font-style: 600;
+	font-weight: 600;
 }
 
 .subtitle {
@@ -67,7 +67,7 @@ font-family: 'Helvetica Neue', Arial, sans-serif;
 
 	line-height: 25px;
 	font-size: 18px;
-	font-style: normal;
+	font-weight: normal;
 }
 
 .header__main-illustration {
@@ -114,7 +114,7 @@ font-family: 'Helvetica Neue', Arial, sans-serif;
 
 	line-height: 1.2;
 	font-size: 18px;
-	font-style: normal;
+	font-weight: normal;
 	color: #2f80ed;
 }
 
@@ -126,7 +126,7 @@ font-family: 'Helvetica Neue', Arial, sans-serif;
 .two-columns_main-text_paragraph {
 	line-height: 34px;
 	font-size: 24px;
-	font-style: normal;
+	font-weight: normal;
 	margin: 0;
 }
 
@@ -137,7 +137,7 @@ font-family: 'Helvetica Neue', Arial, sans-serif;
 .span_accent {
 	line-height: 34px;
 	font-size: 24px;
-	font-style: 600;
+	font-weight: 600;
 }
 
 
@@ -182,7 +182,7 @@ font-family: 'Helvetica Neue', Arial, sans-serif;
 
 	line-height: 1.15;
 	font-size: 24px;
-	font-style: 600;
+	font-weight: 600;
 
 	text-align: center;
 }
@@ -191,7 +191,7 @@ font-family: 'Helvetica Neue', Arial, sans-serif;
 	margin: 0;
 	line-height: 23px;
 	font-size: 18px;
-	font-style: normal;
+	font-weight: normal;
 
 	text-align: center;
 }
@@ -211,6 +211,9 @@ font-family: 'Helvetica Neue', Arial, sans-serif;
 .video__iframe {
 	width: 515px;
 	height: 316px;
+
+	border: 0;
+	overflow: hidden;
 }
 
 .video__iframe + .video__iframe {
@@ -224,7 +227,7 @@ font-family: 'Helvetica Neue', Arial, sans-serif;
 
 .oakley {
 	padding: 180px 160px 100px;
-	margin-top: -40px;
+	margin-top: -50px;
 	width: 80%;
 }
 
@@ -255,13 +258,13 @@ font-family: 'Helvetica Neue', Arial, sans-serif;
 
 	line-height: 1.15;
 	font-size: 120px;
-	font-style: 600;
+	font-weight: 600;
 }
 
 .feynman__subtitle {
 	line-height: 51px;
 	font-size: 36px;
-	font-style: normal;
+	font-weight: normal;
 	margin-top: 70px;
 }
 
@@ -272,7 +275,7 @@ font-family: 'Helvetica Neue', Arial, sans-serif;
 
 	line-height: 51px;
 	font-size: 36px;
-	font-style: normal;
+	font-weight: normal;
 }
 
 .feynman__image {
@@ -294,7 +297,7 @@ font-family: 'Helvetica Neue', Arial, sans-serif;
 .section__title {
 	line-height: 1.15;
 	font-size: 60px;
-	font-style: 600;
+	font-weight: 600;
 	text-align: center;
 
 	
@@ -307,7 +310,7 @@ font-family: 'Helvetica Neue', Arial, sans-serif;
 .section__subtitle {
 	line-height: 34px;
 	font-size: 24px;
-	font-style: normal;
+	font-weight: normal;
 
 	text-align: center;
 	margin: auto;
@@ -345,13 +348,13 @@ font-family: 'Helvetica Neue', Arial, sans-serif;
 .table__heading {
 	line-height: 1.15;
 	font-size: 24px;
-	font-style: 600;
+	font-weight: 600;
 }
 
 .table__text{
 	line-height: 1.2;
 	font-size: 18px;
-	font-style: normal;
+	font-weight: normal;
 	margin-top: 20px;
 }
 
@@ -372,14 +375,14 @@ font-family: 'Helvetica Neue', Arial, sans-serif;
 .khan__author {
 	line-height: 42px;
 	font-size: 30px;
-	font-style: normal;
+	font-weight: normal;
 	margin: 0;
 }
 
 .khan__title {
 	line-height: 1.15;
 	font-size: 60px;
-	font-style: 600;
+	font-weight: 600;
 
 	margin-top: 0;
 }
@@ -390,13 +393,13 @@ font-family: 'Helvetica Neue', Arial, sans-serif;
 
 	line-height: 34px;
 	font-size: 24px;
-	font-style: normal;
+	font-weight: normal;
 }
 
 .khan__quote-author {
 	line-height: 1.15;
 	font-size: 24px;
-	font-style: 600;
+	font-weight: 600;
 	margin: 0;
 }
 
@@ -405,7 +408,7 @@ font-family: 'Helvetica Neue', Arial, sans-serif;
 
 	line-height: 1.15;
 	font-size: 24px;
-	font-style: normal;
+	font-weight: normal;
 }
 
 .book-container {
@@ -430,7 +433,7 @@ font-family: 'Helvetica Neue', Arial, sans-serif;
 
 	line-height: 42px;
 	font-size: 30px;
-	font-style: normal;
+	font-weight: normal;
 }
 
 
@@ -506,7 +509,7 @@ font-family: 'Helvetica Neue', Arial, sans-serif;
 .footer__author {
 	line-height: 25px;
 	font-size: 18px;
-	font-style: normal;
+	font-weight: normal;
 
 	margin: 18px 0;
 }
@@ -514,7 +517,7 @@ font-family: 'Helvetica Neue', Arial, sans-serif;
 .footer__heading {
 	line-height: 30px;
 	font-size: 18px;
-	font-style: 600;
+	font-weight: 600;
 
 	margin-top: 0;
 }
@@ -522,7 +525,7 @@ font-family: 'Helvetica Neue', Arial, sans-serif;
 .footer__column-links {
 	line-height: 30px;
 	font-size: 18px;
-	font-style: normal;
+	font-weight: normal;
 
 	display: flex;
 	flex-direction: column;
@@ -533,7 +536,7 @@ font-family: 'Helvetica Neue', Arial, sans-serif;
 .footer__column-link {
 	line-height: 30px;
 	font-size: 18px;
-	font-style: normal;
+	font-weight: normal;
 
 	color: white;
 	text-decoration: none;
